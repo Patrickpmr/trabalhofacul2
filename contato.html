@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+        }
+
+        /*Título dos contatos*/
+        h1{
+            text-align: center;
+            color: #fff;
+            padding: 15px;
+
+        }
+        body{
+            background-color: rgb(27, 27, 27);
+        }
+
+        
+        .nome{margin-right: 28px; color: #fff;}
+        .fone{margin-right: 37px; color: #fff;}
+        .email{margin-right: 34px; color: #fff;}
+        .mensagem{color: #fff;}
+
+        button{
+            position: relative;
+            left: 50%;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .formulario{
+            padding: 10px;
+        }
+
+        body.center-form {
+    min-height: 100vh;
+  }
+
+  div.center-form {
+    position: relative;
+    min-height: 100vh;
+    font-weight: bold;
+  }
+
+  div.center-form > form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  .contato{
+    display: flex;
+    flex-direction: column;
+   position: relative;
+    padding: 30px;
+    width: 500px;
+    gap: 10px;
+    font-weight: bold;
+    
+  }
+  .contato1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(100, 137, 76);
+  }
+
+  button:hover{
+    background-color: rgb(100, 137, 76);;
+  }
+
+  /*Menu de navegação*/
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: rgb(44, 42, 42);
+    opacity: 0.5;
+}
+
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 25px;
+    list-style-type: none;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(100, 137, 76);
+    transform: scale(1.5);
+}
+
+.background{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    top: 25%;
+}
+
+span{
+    color: rgb(100, 137, 76);;
+}
+
+.cabecalho-link{
+    font-size: 20px;
+}
+
+/*Aumenta texto quando passa o mouse*/
+ul li:hover{
+    transform: scale(1.2);
+}
+
+nav h2{
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    letter-spacing: 5px;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="background">
+        <nav>
+            <h2>Portfó<span>lio</span> </h2>
+            <!--Cabeçalho-->
+            <ul class="cabecalho-link">
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação Educacional</a></li>
+                <li><a href="portifolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li> 
+            </ul>
+        </nav>
+
+        <!--Meus contatos-->
+    <h1>Meu Contato</h1>
+    <div class="contato1">
+        <div class="contato">
+            <p>Fone: 91 99233-5902</p>
+            <p>Email: patrick.mr.90@gmail.com</p>
+            <p>Github: <a href="https://github.com/Patrickpmr">GitHub</a></p>
+            <p>Linkedin: <a href="https://www.linkedin.com/in/patrick-rodrigues">Linkedin</a></p>
+         </div>
+    </div>
+
+    <!--Formulário-->
+    <div class="center-form">
+    <form action="" class="formulario">
+        <label class="nome" for="name">Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" size="60" maxlength="50"><br><br>
+
+        <label class="fone" for="fone">Fone:</label>
+        <input type="tel" name="tel" placeholder="99-99999-9999" size="10" maxlength="11"><br><br>
+
+        <label class="email" for="email">Email:</label>
+        <input type="email" name="email" placeholder="Email" size="60" maxlength="50"><br><br>
+
+        <label class="mensagem" for="mensagem">Mensagem:</label>
+        <textarea rows="6" style="width: 400px;" placeholder="Digite sua mensagem" id="mensagem" name="mensagem"></textarea><br><br>
+        <button>Enviar</button>
+    </form>
+    </div>
+</div>
+    
+</body>
+</html>
